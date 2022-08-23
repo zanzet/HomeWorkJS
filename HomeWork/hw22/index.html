@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            margin: 50px 0 0 200px;
+        }
+        form{
+            margin-bottom: 20px;
+        }
+        label{
+            margin-right: 20px;
+        }
+        .square{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            display: none;
+        }
+        .rectangle{
+            position: relative;
+            width: 200px;
+            height: 100px;
+            background-color: gray;
+            display: none;
+        }
+        .triangle{
+            display: none;
+            width: 0;
+            height: 0;
+            border-left: 70px solid transparent;
+            border-right: 70px solid transparent;
+            border-bottom: 140px solid gray;
+            position: relative;
+        }
+        .active{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+   <section>
+    <form id="userForm">
+        <label>
+			Color
+			<select id="userColor">
+				<option disabled selected>Choose</option>
+				<option value="Red">Red</option>
+				<option value="Blue">Blue</option>
+				<option value="Yellow">Yellow</option>
+			</select>
+		</label>
+        <label>
+            Figures
+            Square:<input type="radio" value="square" name="userFigures" checked>
+            Rectangle:<input type="radio" value="rectangle" name="userFigures">
+            Triangle:<input type="radio" value="triangle" name="userFigures">
+        </label>
+
+        <button id="submit">submit</button>
+    </form>
+
+    <div class="figures">
+        <div class="square">
+        </div>
+    
+        <div class="rectangle">
+        </div>
+    
+        <div class="triangle">
+        </div>
+    </div>
+
+   </section>
+    <script src="hw_22.js"></script>
+</body>
+</html>
