@@ -19,7 +19,6 @@ const controller = async (api, method="GET", obj) => {
 
 		return response;
 	} catch(err){
-	\
 		return [];
 	}
 }
@@ -136,7 +135,6 @@ class HEROES{
 		})
 		
 		deleteAction.append(deleteBTN); 
-
 		dataTable.append(table);
 		table.append(tbody);
 		tbody.append(labelTD);
