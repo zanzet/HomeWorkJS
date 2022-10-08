@@ -147,7 +147,3 @@ class HEROES{
 		
 	}
 }
-
-
-// aa = document.querySelector('input[data-name="heroFavourite"]');
-// console.dir(aa)
